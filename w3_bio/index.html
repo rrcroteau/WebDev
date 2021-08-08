@@ -14,14 +14,13 @@
     
                 font-size: 70px;
                 text-align:center;
-                padding: 20px;
-                    
+                                    
             }
     
             
             .border {
     
-                border:1px solid black;
+                border:5px solid teal;
                 margin-bottom:10px;
                 padding:5px
             }
@@ -38,7 +37,15 @@
                 width:1200px;
                 margin:auto;/*adds equal space to left and right sides, requires a width value applied*/
             }
-    
+
+            #content {
+
+                min-height: 800px;
+                font-size: 22px;
+                padding: 10px;
+
+            }
+
             .bg-main {
     
                 background-color: gray;
@@ -74,7 +81,7 @@
     <!-- wrapper holds the entire page content-->
     <div id="wrapper">
 
-        <div id="header" class="bg-main">
+        <div id="header" class="bg-main border">
 
             <!--name of the page-->
             <h1 id="title">ABOUT ME</h1>
@@ -93,7 +100,13 @@
         <!--main page content -->
         <div id="content" class="border">
 
-            <p>R CROTEAU - HOME PAGE</p>
+            <p id="text">
+        
+                &nbsp&nbsp&nbsp&nbsp&nbspMy name is Ron and I am a <b>21 year</b> veteran of the <i>United States Army</i>. I have lived around the country and the world, but my favorite place to live has been Germany. I am currently a software engineer student at <strong>New England Institute of Technology</strong>. I currently live in <em>West Greenwich, Rhode Island</em>.
+        
+            </p>
+            <br><br><br><br>
+            <img src="images/Amsterdam_Pic.JPG" title="Vondelpark, Amsterdam" alt="Amsterdam Selfie" style="height: 460px; width: 309px; margin: auto; display:block;">
 
         </div><!--/ #content-->
 
