@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="R Croteau">
+    <meta name="description" content="forms demo">
+    
+    <title>Forms Demo</title>
+</head>
+<body>
+
+    <!--all forms must be held within a FORM element-->
+
+    <form>
+
+        <!--each area for input must have a label-->
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName" placeholder="First Name" maxlength="20"> <!--inputs are self closing-->
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        <br>
+        <!--checkboxes can take multiple choices at once-->
+        <p>Favorite Seasons</p>
+        <input type="checkbox" name="season1" value="Winter">
+        <label for="season1">Winter</label>
+        <input type="checkbox" name="season2" value="Spring">
+        <label for="season2">Spring</label>
+        <input type="checkbox" name="season3" value="Summer">
+        <label for="season3">Summer</label>
+        <input type="checkbox" name="season4" value="Fall">
+        <label for="season4">Fall</label>
+        <br><br>
+        <!--drop-down selection only selects one-->
+        <label for="vehicle">What kind of vehicle do you drive/ride?</label>
+        <select name=vehicle>
+
+            <option value="empty"></option>
+            <option value="car">Car</option>
+            <option value="bike">Bike</option>
+            <option value="motorcycle">Motorcycle</option>
+            <option value="boat">Boat</option>
+            <option value="dragon">Dragon</option>
+            <option value="roci">Rocinante</option>
+
+        </select>
+
+        <!--radio button only selects one-->
+        <br><br>
+        <lable for="program">Are you a Programmer or a Networker?</lable>
+        <br>
+        <input type="radio" name="program" value="Programmer">Programmer
+        <br>
+        <input type="radio" name="program" value="Networker">Networker
+        <br>
+
+        <!--submit button - this is what runs the method & action if applied to the form element-->
+        <br><br>
+        <input type="submit" value="SUBMIT!">
+        
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
