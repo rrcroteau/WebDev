@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W6 JavaScript Intro</title>
+</head>
+<body>
+    
+    <!--we should have some sort of HTML in the file-->
+    <h1>Week 6 Intro | JavaScript</h1>
+
+    <!--IN DOCUMENT JAVASCRIPT-->
+    <script>
+        //everything inside of the <script> tags MUST be written in JavaScript
+
+        //create some variables -- need to declare with "var" keyword
+        var num1 = 10
+
+        var num2 = 7
+
+        // we cannot use num 1 and num2 in processes until they have been declared and defined
+
+        var sum = num1 + num2
+
+        //alert() creates a popup  ` ` denotes LITERAL STRING
+        alert(`The sum of ${num1} + ${num2} is ${sum}`)
+
+        console.log(sum)  //often used for testing; no physical display in page, only accessible via console in dev tools
+
+        /* to view in console:      F12
+                                    Choose Console
+                                    Refresh page
+                                                    */
+        console.log(`Hello World!`)
+
+        //prompts user for value, waits for the ENTER key
+        prompt("Enter your name: ")
+            
+        //stores the value from prompt()!!
+        var name = prompt("Enter your last name: ")
+
+        alert(`Your last name is: ${name}`)
+        console.log(`${name}`) // or simply console.log(name)
+
+        var num = Number(prompt("Enter a number to be multiplied by 7: "))
+
+        //num = Number(num)
+
+        //num is now a Number() and can be used in math
+        var multi = num * 7
+
+        alert(`${num} * 7 = ${multi}`)
+        console.log(`The multi value is: ${multi}`)
+        console.log(multi)
+
+            
+    
+    </script>
+
+</body>
+</html>

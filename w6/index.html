@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="W6 | Javascript Pay Calculator">
+    <meta name="author" content="R CROTEAU">
+    <title>W6 JavaScript Pay Calculator</title>
+</head>
+<body>
+    
+    <h1>Week 6 | JavaScript Pay Calculator</h1>
+
+    <!--IN DOCUMENT JAVASCRIPT-->
+    <script>
+        //everything inside of the <script> tags MUST be written in JavaScript
+
+        //create the static variables
+        var tax = Number(.2)
+        
+        //solicit user input for hourly rate and hours worked
+        var hours = Number(prompt("Please enter the number of hours worked: "))
+
+        var rate = Number(prompt("Please enter the hourly rate: "))
+        
+        //determine gross pay (hours * rate)
+        var gross = hours * rate
+
+        //determine Uncle Sam's Share (gross * tax)
+        var taxes = gross * tax
+
+        //determine net pay (gross - taxes)
+        var net = gross - taxes
+
+        //display gross, taxes, net to user
+        alert(`Gross Pay: $${gross.toFixed(2)}\nUncle Sam's Share: $${taxes.toFixed(2)}\nNet Pay: $${net.toFixed(2)}`)
+
+        //log gross, taxes, net to console
+        console.log(gross)
+        console.log(taxes)
+        console.log(net)      
+            
+    
+    </script>
+
+</body>
+</html>
