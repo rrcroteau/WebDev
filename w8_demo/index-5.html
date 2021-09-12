@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 8 | DEMO</title>
+</head>
+<body>
+
+    <h1>Week 8 Demo | Arrays & Objects</h1>
+
+    <div id="output">
+
+    </div><!--/#output-->
+
+
+
+    <script>
+
+        //variables vs arrays
+        var firstName1 = "Katie"
+        var lastName1 = "Truchon"
+
+        var firstName2 = "Jay"
+        var lastName2 = "Aguiar"
+    
+        //show basic array creation
+        //should NOT include differing data types
+        var peopleFirst = [
+            "Katie", 
+            "Jay", 
+            "Joe"
+        ]
+        var peopleLast = ["Truchon", "Aguiar", "Bombassei"]
+
+        //arrays use index to access actual value (lots of values, so we need the name + location)
+        //console.log(`First Person: ${peopleFirst[0]} ${peopleLast[0]}`)
+        //console.log(`Second Person: ${peopleFirst[1]} ${peopleLast[1]}`)
+
+        for(let i = 0; i < peopleFirst.length; i++ )
+        {
+            console.log(`Person @ index ${i}: ${peopleFirst[i]} ${peopleLast[i]}`)
+        }
+
+
+        //show basic object creation
+        //can contain differing data types
+
+        var person1 = {
+
+            first: `Katie`,
+            last: `Truchon`,
+            age: `?`,
+            height: 64, //inches
+            pets: true,
+
+        }
+
+        console.log(`person1 object info: ${person1.first} ${person1.pets} ${person1.height}`)
+        //when accessing an object, you use: objectName[dot]objectProperty (property is the value you are trying to access)
+        //EX:    person1.first --> pulls up the first name stored to person1
+
+
+        var person2 = {
+
+            first: `Joe`,
+            last: `Bombassei`,
+            age: 25,
+            height: 71,
+            pets: false,
+
+        }
+
+        //objects use keys to locate values
+        console.log(`person2 object info: ${person2.first} ${person2.pets} ${person2.height}`)
+
+        //since both arrays & objects store multiple values, often their entire sets are accessed using FOR LOOPS -- for loops for objects get a lil funy cause we dont have i for index
+        for(let key in person2)
+        {
+            //key is the property (stuff in object before ':'), person is object with multiple values stored to it
+            console.log(key, typeof key)
+            console.log(person2[key])
+        }
+
+        var people = [
+            {first: `Katie`, last: `Truchon`, age: `?`},
+            {first: `Jay`, last: `Aguiar`, age: `40`},
+            {first: `Joe`, last: `Bombassei`, age: `25`}
+        ]
+
+        //add a new person to the people[]
+        people.push({first:`Ron`, last: `Croteau`, age: `43`})
+
+        console.log(people)//see the whole array, will also show the objects
+
+        var output = document.querySelector(`#output`)
+
+        for(let i = 0; i < people.length; i++)//access each object in array
+        {
+            
+            output.innerHTML += `<h3 id='index-${i}'> Person ${i + 1}: </h3>`//creates header
+            
+            for(let key in people[i])//for each key/property in the current object found within/being accessed the array
+            {
+                //add each property + value to display
+                output.innerHTML += `<p>${key.toUpperCase()}: ${people[i][key]} </p>`
+                console.log(people[i][key]) //use [key] when accessing the value
+            }
+            output.innerHTML += `<hr>`
+
+        }
+
+    </script>
+    
+</body>
+</html>
