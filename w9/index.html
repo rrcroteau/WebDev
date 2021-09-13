@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ron Croteau" >
+<meta name="description" content="W9 | Creating Elements" >
+<title>Week 9 Files</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+	var people =[
+		{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+		{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+		{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+	]
+
+	//select and store the body tag
+	var body = document.querySelector(`body`)
+
+	//Loop through the array of objects
+	for(let i = 0; i < people.length; i++)
+	{
+		//create tempDivs for each object, set an increment id for each, and create a border class for each
+		var tempDiv = document.createElement(`div`)
+		tempDiv.setAttribute(`id`, i)
+		tempDiv.setAttribute(`class`, `border`)
+
+		for(let key in people[i])
+        {
+            //create paragraph elements and text nodes containing the key values for each property in the object
+			var p = document.createElement(`p`)
+            var text = document.createTextNode(people[i][key])
+
+			//append the elements and text nodes to the tempDiv
+            p.append(text)
+            tempDiv.appendChild(p)
+        }
+		
+		//Append the tempDiv to the body tag
+		body.appendChild(tempDiv)
+	}
+	
+</script>
+
+</html>
