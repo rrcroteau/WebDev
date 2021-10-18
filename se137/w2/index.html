@@ -4,47 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Week 1 Bio">
+    <meta name="description" content="Week 2 Bio">
     <meta name="author" content="Ron Croteau">  
-    <title>SE137 | W1 Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>SE137 | W2 Bio</title>
 
-    <!--Ron Croteau | SE137.03 | October 7, 2021-->
-    <style>
+    <!--Ron Croteau | SE137.03 | October 17, 2021-->
 
-        body{
-            background-color: rgb(190, 190, 190);
-        }
-
-        .header1{
-            color: rgb(27, 82, 0);
-        }
-
-        .header2{
-            color: teal;
-        }
-
-        /*for the selfie image*/
-        .selfie{
-            height: 360px;
-        }
-
-        /*used to hide certain parts of the website until that link in the nav is pressed*/
-        .hide{
-            display: none;
-        }
-
-        /*style the link in its unvisited state and visited state so it stays black*/
-        .links:link, .links:visited{
-            color: black;
-        }
-
-        /*style the link when it is hovered over*/
-        .links:hover{
-            color: blue;
-            font-weight: 700;
-        }
-
-    </style>
 
 </head>
 
@@ -53,8 +19,6 @@
     <div id="wrapper">
 
         <h1 id="header" class="header1"> Ron Croteau</h1>
-
-        <hr>
         
         <!--NAV SECTION-->
         <div id="nav">
@@ -63,8 +27,6 @@
             <a href="#ed" id="ed-link" class="links">Education</a>
             <a href="#hobbies" id="hobbies-link" class="links">Hobbies</a>
         </div><!-- / #nav-->
-
-        <hr>
 
         <div id="main">
 
@@ -75,12 +37,10 @@
                 <img src="images/Amsterdam_Pic.JPG" alt="Amsterdam Selfie" class="selfie">
 
                 <p>
-                    My name is Ron and I am a <b>21 year</b> veteran of the <i>United States Army</i>. I have lived around the country and the world, but my favorite place to live has been Germany. I am currently a software engineer student at <strong>New England Institute of Technology</strong>. I currently live in <em>West Greenwich, Rhode Island</em>.
+                    &emsp;My name is Ron and I am a 21 year veteran of the United States Army. I have lived around the country and the world, but my favorite place to live has been Germany. I am currently a software engineer student at <strong>New England Institute of Technology</strong>. I currently live in West Greenwich, Rhode Island.
                     <br>
-                    I discovered programming after I retired from the Army and instantly fell in love. I decided it would make an excellent choice for a second career and have been pursuing my education since then. I really enjoy logic, problem solving, and learning new languages, so it is a perfect fit.
+                    &emsp;I discovered programming after I retired from the Army and instantly fell in love. I decided it would make an excellent choice for a second career and have been pursuing my education since then. I really enjoy logic, problem solving, and learning new languages, so it is a perfect fit.
                 </p>
-
-                <hr>
 
             </div><!-- / #bio-->
 
@@ -88,8 +48,8 @@
 
                 <h2 class="header2">Schooling</h2><!--Contains an unordered list of schools I have attended-->
 
-                <ul>
-                    <li><a href="https://www.neit.edu/" target="_blank">New England Institute of Technology</a></li><!--Links to external site in a new window-->
+                <ul class="list">
+                    <li><a href="https://www.neit.edu/" target="_blank" id="external">New England Institute of Technology</a></li><!--Links to external site in a new window-->
                     <li>University of Maryland Global Campus</li>
                     <li>Excelsior College</li>
                     <li>Troy University</li>
@@ -98,15 +58,13 @@
                     <li>Woonsocket High School</li>
                 </ul>
 
-                <hr>
-            
             </div><!-- / #ed-->
 
             <div id="hobbies" class="hide">
 
                 <h2 id="hobbies" class="header2">Hobbies</h2><!--Contains an ordered list of some of my hobbies-->
 
-                <ol>
+                <ol class="list">
                     <li>Line Dancing at Mishnock Barn</li>
                     <li>Video Games</li> 
                     <li>Learning German</li>                    
@@ -114,19 +72,15 @@
 
                 <img src="images/MishnockBarn.jpg" alt="Mishnock Barn"> 
 
-                <hr>
-
             </div><!-- / #hobbies-->
 
             <div id="footer">
 
-                <p><b>&copy;2021 Ron Croteau | W1 Assignment</b></p>
+                <p><b>&copy;2021 Ron Croteau | W2 Assignment</b></p>
     
             </div><!--/ #footer-->
 
         </div><!-- / #main-->
-
-        <hr>  
 
     </div><!-- / #wrapper -->
 

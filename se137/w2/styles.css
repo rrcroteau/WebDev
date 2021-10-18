@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Coco';
+    src: url("fonts/Cocogoose.ttf");
+  }
+
+body{
+    background-color: transparent;
+    font-family: 'Roboto Slab', serif;
+}
+
+#nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/*for the "body" texts on the pages*/
+p, .list{
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/*both the header types on the page*/
+.header1, .header2{
+    font-family: 'Coco', sans-serif;
+    text-shadow: 5px 5px lightgray;
+}
+
+.header1{
+    color: black;
+    font-size: 64px;
+    text-align: center;
+    margin:0%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(131,131,131,1) 18%, rgba(0,0,0,1) 89%);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.header2{
+    color: rgb(25, 25, 25);
+    font-size: 48px;
+}
+
+#footer{
+    text-align: center;
+    padding-bottom: 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*for the selfie image*/
+.selfie{
+    height: 360px;
+}
+
+/*used to hide certain parts of the website until that link in the nav is pressed*/
+.hide{
+    display: none;
+}
+
+/*general style for links in the nav bar*/
+.links{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 30px;
+    background-color: lightgray;
+    border-radius: 25px;
+    box-shadow: 5px 5px black;   
+}
+
+/*style the link in nav bar in its unvisited state and visited state so it stays black*/
+.links:link, .links:visited{
+    color: purple;
+}
+
+/*style the link in nav bar when it is hovered over*/
+.links:hover{
+    color:white;
+    background-color: black;
+    box-shadow: 5px 5px lightgrey;
+}
+
+/*style the external link not in the nav bar*/
+#external:link, #external:visited{
+    color: purple;
+}
+
+#external:hover{
+    color: red;
+}
