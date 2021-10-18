@@ -20,7 +20,7 @@ body{
 
 /*for the "body" texts on the pages*/
 p, .list{
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -32,7 +32,7 @@ p, .list{
 
 .header1{
     color: black;
-    font-size: 64px;
+    font-size: 48px;
     text-align: center;
     margin:0%;
     background: rgb(255,255,255);
@@ -42,7 +42,7 @@ p, .list{
 }
 .header2{
     color: rgb(25, 25, 25);
-    font-size: 48px;
+    font-size: 24px;
 }
 
 #footer{
