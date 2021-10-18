@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*This is a comment*/
+
+*{
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+div{
+    height: 400px;
+    width: 400px;
+    background-color: #bbb;
+    padding: 20px;
+    margin: 20px;    
+
+}
+
+main{
+    position: relative;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'nav nav nav'
+                         'bio bio bio'
+                         'ed ed hobbies'
+                         'footer footer footer';    ;
+    grid-gap: 10px;
+    
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+#bio{
+    grid-area: bio;
+}
+
+#ed{
+    grid-area: ed;
+}
+
+#hobbies{
+    grid-area: hobbies;
+}
