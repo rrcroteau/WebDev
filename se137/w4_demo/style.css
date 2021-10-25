@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 80%;
+    background-color: chocolate;
+    min-height: 50vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+.thing{
+    align-self: flex-end;
+}
+
+
