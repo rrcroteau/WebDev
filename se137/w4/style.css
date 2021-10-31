@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 *{
     box-sizing: border-box;
@@ -30,14 +33,16 @@ header{
 
 h1{
     font-size: 48px;
+    font-weight: 400;
     line-height: 69px;
 }
 
 nav{
     font-size: 60px;
     align-self: center;
-    padding-top: 6px;
+    padding-top: 21px;
 }
+
 
 section{
     display: grid;
@@ -51,35 +56,165 @@ section{
     height: 388px;
     background-image: url("images/banner.png");
     background-repeat: no-repeat;
-    background-size: 1440px 388px;
+    background-size: 1440px;
+    background-position: 0px -40px;
 }
-
+/*left module*/
 #l{
     grid-area: l;
-}
+    display: grid;
+    grid-template-areas: 'poster h2 h2'
+                         'poster lp lp'
+                         'poster dvd purchase';
+    margin-left: 20px;
+    width: 700px;
+    height: 481px;
+    background-color: #393939;
+    color: #fff;
+    border-top: 5px solid #BB0908;
 
+
+}
+/*left module poster*/
+#poster{
+    grid-area: poster;
+    width: 310px;
+    height: 475px;
+    margin: 0 19px 1px 1px;
+}
+/*left module header*/
+h2{
+    grid-area: h2;
+    height: 77px;
+    margin: 5px 21px 5px 3px;
+    font-family: 'Rock Salt', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 72px;
+    color: #ff1d29;
+    border-bottom: 4px solid #BB0908;
+    
+}
+/*left module paragraph*/
+#lp{
+    grid-area: lp;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 27px;
+    margin-right: 20px;
+}
+/*left module dvd image*/
+#dvd{
+    grid-area: dvd;
+    width: 117px;
+    height: 148px;
+    margin-bottom: 20px;
+}
+/*left module purchase information paragraph*/
+#purchase{
+    grid-area: purchase;
+    text-align: center;
+    margin: 0 28px 0 10px;
+    width: 191px;
+    height: 135px;
+    border-bottom: 2px solid #fff;
+}
+/*left module 'link' to Amazon*/
+#amazon{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #22C1CB;
+    line-height: 27px;
+    text-decoration: underline;
+}
+/*left module pricing information*/
+#price{
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 2px;
+}
+/*right module*/
 #r{
     grid-area: r;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    width: 700px;
+    height: 481px;
+    background-color: #393939;
+    border-top: 5px solid #BB0908;
+    padding-left: 24px;
+}
+/*right module image*/
+#pennant{
+    width: 641px;
+    height: 229px;
+    padding-top: 17px;
+}
+/*right module paragraph*/
+#r p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
 }
 
 aside{
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 918px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #393939;
+    color: #fff;
+}
+
+/*aside sign picture*/
+#sign{
+    width: 325px;
+    margin-top: -15px;
+}
+
+aside p{
+    width: 275px;
+    height: 385px;
+    margin: 0px 0px 23px 2.5px;
+
+}
+
+aside span{
+    font-weight: 700px;
+    color: #FC0303;
+}
+
+/*aside underwater picture*/
+#underwater{
+    width: 325px;
+    height: 170.52px;
+    margin-top: 4px;
 }
 
 footer{
-    position: absolute;
     width: 1820px;
     height: 60px;
-    left: 0px;
-    top: 1017px;
     background: #070707;
 }
 
-#fp{
-    height: 17px;
+footer p{
     font-size: 12px;
-    line-height: 17px;
     padding: 21px 0 22px 30px;
+    margin: 0;
     color: #BCBCBC;
 }
+
+
 
