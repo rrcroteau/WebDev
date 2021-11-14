@@ -8,35 +8,65 @@
     <link rel="stylesheet" href="style.css">
     <title>SE137 | W6 Software Layout</title>
 
+    <script src="https://kit.fontawesome.com/dec7aa7663.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <main>
-        <header></header>
+        <header>
+            <p class="header pointer">File</p>
+            <p class="header pointer">Edit</p>
+            <p class="header pointer">Help</p>
+            <p id="assignment">Week 6 Assignment</p>
+            <div id="gear" class="pointer"></div>
+        </header>
         <section>
             <aside>
-                <a href="#" id="toggle">Button</a>
+                <a href="#" id="toggle"><i class="fas fa-inbox"></i></a>
+                <a href="#" id="window"><i class="fas fa-th-large"></i></a>
+                <a href="#" id="trash"><i class="fas fa-trash"></i></a>
             </aside>
             <div class="tray">
                 <div id="inner-tray">
-                    <ul>
-                        <li>list</li>
-                        <li>list</li>
-                    </ul>
+                    <details open>
+                        <summary class="pointer">Files</summary>
+                        <ul id="upper">
+                            <li>File 1</li>
+                            <li>File 2</li>
+                            <li>File 3</li>
+                            <li>File 4</li>
+                        </ul>
+                    </details>
+
+                    <details open>
+                        <summary class="pointer">Other Stuff</summary>
+                        <ul id="lower">
+                            <li>Stuff 1</li>
+                            <li>Stuff 2</li>
+                            <li>Stuff 3</li>
+                        </ul>
+                    </details>
+                    
+
                 </div>
 
             </div>
             <div id="editor">
                 <nav>
-                    <a href="#" >Tab 1</a>
-                    <a href="#" >Tab 2</a>
-                    <a href="#" >Tab 3</a>
+                    <a href="#" ><i class="fas fa-plane"></i>&nbsp;&nbsp;Tab 1<i class="fas fa-times"></i></a>
+                    <a href="#" ><i class="fas fa-plane"></i>&nbsp;&nbsp;Tab 2<i class="fas fa-times"></i></a>
+                    <a href="#" ><i class="fas fa-plane"></i>&nbsp;&nbsp;Tab 3<i class="fas fa-times"></i></a>
                 </nav>
-                <p>words</p>
+                <p id="path"><span class="pointer">SE 137</span> > <span class="pointer">W6</span> > <span class="pointer">Homework</span></p>
                 <textarea>
+                    Ha! Fooled you into thinking this was a real VS Code Window!
                 </textarea>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <p>main* &copy;2021 Ron Croteau</p>
+            <i id="signal" class="fas fa-signal"></i>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>
