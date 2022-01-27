@@ -1,0 +1,71 @@
+﻿<!D<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ron Croteau">
+    <title>Jedi Name Generator</title>
+    <!--Link to the stylesheet(s)-->
+    <link rel="stylesheet" href="email_list.css" />
+
+</head>
+<body>
+
+    <main>
+        <h1>Welcome Future Jedi</h1>
+
+        <!--Create the for to sign up for the mail list-->
+        <form id="email_form" action="join.html" method="get">
+
+            <!--Create the label, input, and error tracker for the email input-->
+            <div>
+                <label for="email_1">Email Address:</label>
+                <input type="text" id="email_1" name="email_1" />
+                <span id="email_1_error">*</span>
+            </div>
+
+            <!--Create the label, input and error tracker for the first name input-->
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" />
+                <span id="first_name_error">*</span>
+            </div>
+
+            <!--Create the label, input, and error tracker for the birthplace input-->
+            <div>
+                <label for="birthplace">Birthplace (City/Town):</label>
+                <input type="text" id="birthplace" name="birthplace" />
+                <span id="birthplace_error">*</span>
+            </div>
+
+            <!--Create the label, input and error tracker for the favorite season input-->
+            <div>
+                <label for="season">Favorite Season (Fall, Winter, Spring, Summer):</label>
+                <input type="text" id="season" name="season" />
+                <span id="season_error">*</span>
+            </div>
+
+            <!--Create the label, input and error tracker for the smurf personality input-->
+            <div>
+                <label for="smurf">If you were a smurf, what would your personality be? (Brainy, Goofy, Silly, etc.):</label>
+                <input type="text" id="smurf" name="smurf" />
+                <span id="smurf_error">*</span>
+            </div>
+
+            <!-- Create input and clear for buttons -->
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" id="join_list" value="Join List" />
+                <input type="button" id="clear_form" value="Clear Form" />
+            </div>
+
+
+        </form>
+
+    </main>
+
+    <!-- Add the JavaScript link to the page-->
+    <script src="jedi.js"></script>
+
+</body>
+</html>
