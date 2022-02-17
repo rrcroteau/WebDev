@@ -1,0 +1,20 @@
+﻿body {
+    font-family: Segoe, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 500px;
+    border: 3px solid black;
+    padding: 0 2em 1em;
+}
+
+h1, h2 {
+    color: black;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+ul {
+    display: none;
+}
