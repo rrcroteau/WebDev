@@ -1,0 +1,26 @@
+﻿* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: Segoe, Helvetica, sans-serif;
+    background-color: black;
+    width: 80vw;
+    border: 3px solid white;
+    padding: 0 2em 1em;
+}
+
+
+h1, h2, p {
+    text-align: center;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline;
+}

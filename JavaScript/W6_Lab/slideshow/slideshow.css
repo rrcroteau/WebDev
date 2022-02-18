@@ -1,0 +1,25 @@
+﻿body {
+    font-family: Segoe, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80vw;
+    border: 3px solid black;
+    padding: 1em 2em 1em;
+}
+
+h1, h2 {
+    color: black;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+ul {
+    display: none;
+}
+
+a {
+    max-height: 70vh;
+}

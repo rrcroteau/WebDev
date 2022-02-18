@@ -1,0 +1,23 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border: 3px solid black;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+p {
+    margin-top: 25px;
+}
