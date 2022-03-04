@@ -27,7 +27,7 @@ span {
     width: 25em;
     margin: 0 0 .5em;
     padding: 1em;
-    border: 2px solid blue;
+    border: 2px solid black;
     min-height: 5em;
 }
 #tasks a { 

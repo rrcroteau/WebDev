@@ -24,3 +24,45 @@ const displayTasks = () => {
     });
 
 }
+
+$(document).ready(() => {
+    //button click event for add task button
+    $("#add_task").click(() => {
+        const taskObj = { //object literal
+            description: $("#task").val(), //get the description
+            dueDate: $("#due_date").val()
+        };
+
+        const newTask = new Task(taskObj); //task object
+
+        //if the new task is valid, load sorted list, add new task, save, then display again
+        if (newTask.isValid) {
+            taskList.load().add(newTask).save();
+            displayTasks();
+            $("#task").val(""); //clear the form fields for the next entry
+            $("#due_date").val("");
+        }
+
+        else {
+            //else, display err message
+            alert("Please enter a task and/or a due date that is in the future.");
+        }
+
+        $("#task").select(); //move focus to task and highlights
+    });
+
+    //button click event for the clear form button
+    $("#clear_tasks").click(() => {
+        taskList.clear();
+        $("#tasks").html("");
+        $("#task").val("");
+        $("#due_date").val("");
+        $("#task").focus();
+
+    });
+
+    //by default, when page loads
+    taskList.load(); //load the default task list (what is current in localStorage)
+    displayTasks(); //display the task on the form
+    $("#task").focus(); //set focus
+});

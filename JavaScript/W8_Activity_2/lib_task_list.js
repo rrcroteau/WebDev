@@ -11,7 +11,7 @@ const taskList = {
 
     //load method that uses the storage library's retrieve method to load the array and return the object instance (itself)
     load() {
-        this.[tasks] = storage.retrieve();
+        this[tasks] = storage.retrieve();
         return this; //return reference to task list object, so we can chain methods
     },
 
