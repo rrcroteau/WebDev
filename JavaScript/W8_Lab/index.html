@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ron Croteau">
+    <title>Week 8 Lab</title>
+    <!--Link to the stylesheet(s)-->
+    <link rel="stylesheet" href="email_list.css" />
+
+</head>
+<body>
+
+    <main>
+        <div id="members"></div>
+        <input type="button" id="clear_members" value="Clear Members" />
+
+        <h1>Member Sign Up</h1>
+
+        <!--Create the label, input and error tracker for the first name input-->
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" />
+            <span id="first_name_error">*</span>
+        </div>
+
+        <!--Create the label, input and error tracker for the middle name input-->
+        <div>
+            <label for="middle_name">Middle Name:</label>
+            <input type="text" id="middle_name" name="middle_name" />
+            <span id="middle_name_error"></span>
+        </div>
+
+        <!--Create the label, input and error tracker for the last name input-->
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" />
+            <span id="last_name_error">*</span>
+        </div>
+
+        <!--Create the label, input and error tracker for the street inputs-->
+        <div>
+            <label for="street_1">Street 1:</label>
+            <input type="text" id="street_1" name="street_1" />
+            <span id="street_1_error">*</span>
+        </div>
+
+        <div>
+            <label for="street_2">Street 2:</label>
+            <input type="text" id="street_2" name="street_2" />
+            <span id="street_2_error"></span>
+        </div>
+
+        <!--Create the label, input and error tracker for the city/state/zip inputs-->
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" />
+            <span id="city_error">*</span>
+        </div>
+
+        <div>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" maxlength="2" />
+            <span id="state_error">*</span>
+        </div>
+
+        <div>
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip" maxlength="5" />
+            <span id="zip_error">*</span>
+        </div>
+
+        <!--Create the label, input and error tracker for the phone inputs-->
+        <div>
+            <label for="home_phone">Home Phone:</label>
+            <input type="text" id="home_phone" name="home_phone" />
+            <span id="home_phone_error"></span>
+        </div>
+
+        <div>
+            <label for="work_phone">Work Phone:</label>
+            <input type="text" id="work_phone" name="work_phone" />
+            <span id="work_phone_error"></span>
+        </div>
+
+        <div>
+            <label for="cell_phone">Cell Phone:</label>
+            <input type="text" id="cell_phone" name="cell_phone" />
+            <span id="cell_phone_error">*</span>
+        </div>
+
+        <!--Create the label, input, and error tracker for the email input-->
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" />
+            <span id="email_error">*</span>
+        </div>
+
+        <!--Create the label, input, and error tracker for the DOB input-->
+        <div>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" />
+            <span id="dob_error">*</span>
+        </div>
+
+        <!--Create the label, input, and error tracker for the Credit input-->
+        <div>
+            <label for="credit">Credit:</label>
+            <input type="number" id="credit" name="credit" />
+            <span id="credit_error">*</span>
+        </div>
+
+        <!--Create the label, input, and error tracker for the Household Inhabitants input-->
+        <div>
+            <label for="household">Household Inhabitants:</label>
+            <input type="number" id="household" name="household" />
+            <span id="household_error">*</span>
+        </div>
+
+        <!--Create the label, input, and error tracker for the Notes (textarea) input-->
+        <div>
+            <label for="notes">Notes:</label>&nbsp;&nbsp;&nbsp;
+            <textarea rows="3" cols="21" id="notes" name="notes"></textarea>
+            <span id="notes_error"></span>
+        </div>
+
+
+        <!-- Create input and clear for buttons -->
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="add_member" value="Join List" />
+            <input type="button" id="clear_form" value="Clear Form" />
+        </div>
+
+
+    </main>
+
+    <!-- Add the JavaScript link to the page-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib_member.js"></script>
+    <script src="lib_storage.js"></script>
+    <script src="lib_member_list.js"></script>
+    <script src="member_list.js"></script>
+    <script src="Validation.js"></script>
+
+</body>
+</html>

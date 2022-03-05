@@ -1,38 +1,38 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    margin: 0 auto;
-    width: 700px;
-    border: 3px solid black;
-    padding: 0 2em 1em;
-}
-h1, h3 {
-    color: black;
-}
-div {
-    margin-bottom: 1em;
-}
-label {
-    display: inline-block;
-    width: 10em;
-}
-input {
-    margin-right: 0.5em;
-}
-span {
-    color: red;
-}
-#tasks {
-    float: right; 
-    width: 25em;
-    margin: 0 0 .5em;
-    padding: 1em;
-    border: 2px solid black;
-    min-height: 5em;
-}
-#tasks a { 
-    margin-right: 0.5em; 
-}
-.clear { 
-    clear: both; 
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        margin: 0 auto;
+        width: 700px;
+        border: 3px solid black;
+        padding: 0 2em 1em;
+    }
+    h1, h3 {
+        color: black;
+    }
+    div {
+        margin-bottom: 1em;
+    }
+    label {
+        display: inline-block;
+        width: 10em;
+    }
+    input {
+        margin-right: 0.5em;
+    }
+    span {
+        color: red;
+    }
+    #tasks {
+        float: right; 
+        width: 25em;
+        margin: 0 0 .5em;
+        padding: 1em;
+        border: 2px solid black;
+        min-height: 5em;
+    }
+    #tasks a { 
+        margin-right: 0.5em; 
+    }
+    .clear { 
+        clear: both; 
+    }

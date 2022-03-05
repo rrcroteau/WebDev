@@ -1,0 +1,52 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: orchid;
+    margin: 0 auto;
+    width: 1000px;
+    /*border: 2px solid black;*/
+    padding: 2em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+
+div {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: inline-block;
+    width: 12em;
+    text-align: right;
+}
+
+input {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+span {
+    color: firebrick;
+}
+
+#members {
+    float: right;
+    width: 25em;
+    margin: 0 0 .5em;
+    padding: 1em;
+    border: 2px solid black;
+    min-height: 5em;
+}
+#clear_members {
+    float: right;
+}
+
+#members a {
+    margin-right: 0.5em;
+}
+
+.clear {
+    clear: both;
+}
